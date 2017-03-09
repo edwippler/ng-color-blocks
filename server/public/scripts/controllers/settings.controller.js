@@ -3,7 +3,10 @@ colorBlocks.controller('SettingsController', ['DataFactory', function(DataFactor
   var self = this;
   self.colors = DataFactory.optionalColors;
 
-  self.addColor = function(color){
-    console.log(color, 'was clicked');
-  }
+  self.addColor = DataFactory.add;
+
+  // self.addColor = function(color){
+  //   console.log(color, 'was clicked');
+  // }
+
 }]);

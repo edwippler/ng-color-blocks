@@ -3,8 +3,14 @@ colorBlocks.factory('DataFactory', [function() {
   var colors = ['red', 'blue', 'magenta', 'green', 'pink'];
   var optionalColors = ['khaki', 'indigo', 'lime', 'darkorange', 'crimson', 'cornflowerblue', 'yellow'];
 
+  var addColor = function(item){
+    colors.push(item);
+  }
+
+
 return{
   colors: colors,
-  optionalColors: optionalColors
+  optionalColors: optionalColors,
+  add: addColor
 };
 }]);
