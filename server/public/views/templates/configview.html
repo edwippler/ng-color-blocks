@@ -2,4 +2,10 @@
   <h1>Settings</h1>
 
   Pro Mode To Do: UI to add colors to the game.
+<div>
+  <select>
+    <option ng-repeat="color in settings.colors" ng-style="{background: color}">{{color}}</option>
+  </select>
+  <button ng-click="settings.addColor(color)">Add Color</button>
+</div>
 </div>
